@@ -1,0 +1,45 @@
+# Formul-rio-de-login
+Formulário criado baseado no vídeo do canal "Danki Code" utilizando Html, Css e um pouco de JS.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Form.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form>
+      <h3>Entrar em contato</h3>
+      <input id="email" type="text" nome="nome" placeholder="Seu Email" />
+      <input
+        id="password"
+        type="password"
+        nome="senha"
+        placeholder="Sua Senha"
+      />
+      <input type="submit" nome="ação" value="enviar" />
+    </form>
+    <script>
+      var email = document.getElementById("email");
+      var password = document.getElementById("password");
+
+      email.addEventListener("focus", () => {
+        email.style.borderColor = "#4a5f6a";
+      });
+
+      email.addEventListener("blur", () => {
+        email.style.borderColor = "#ccc";
+      });
+
+      password.addEventListener("focus", () => {
+        password.style.borderColor = "#4a5f6a";
+      });
+
+      password.addEventListener("blur", () => {
+        password.style.borderColor = "#ccc";
+      });
+    </script>
+  </body>
+</html>
